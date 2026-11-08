@@ -2,85 +2,103 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Política de privacidad · BEIK STUDIO</title>
-<meta name="color-scheme" content="dark">
-<style>:root{--bg:#000;--surface:#121212;--line:#262626;--text:#f5f5f5;--muted:#a8a8a8;--accent:#0095f6}
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Política de privacidad · FORZIN CLIPS</title>
+<meta name="description" content="Política de privacidad · FORZIN CLIPS">
+<link rel="alternate" hreflang="en" href="privacy.html">
+<style>
+:root{--bg:#111;--panel:#1a1a1a;--line:#2c2c2c;--text:#f2f2f2;--muted:#a8a8a8;--a1:#ff3d81;--a2:#ffb347;--a3:#8a3ffc}
+@media (prefers-color-scheme:light){:root{--bg:#fafafa;--panel:#fff;--line:#e2e2e2;--text:#161616;--muted:#5c5c5c}}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.65 Inter,"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif}
-a{color:var(--accent);text-underline-offset:3px}
-a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
-header,main,footer{max-width:46rem;margin:0 auto;padding:0 1.25rem}
-header{padding-top:1.75rem;padding-bottom:1.25rem;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
-.brand{font-weight:600;letter-spacing:.01em;color:var(--text);text-decoration:none}
-nav{display:flex;gap:1.25rem;flex-wrap:wrap;font-size:.95rem}
-main{padding-top:2.25rem;padding-bottom:3rem}
-h1{font-size:2rem;line-height:1.2;font-weight:600;margin:0 0 .35rem}
-h2{font-size:1.25rem;line-height:1.3;font-weight:600;margin:2.25rem 0 .5rem}
-p,li{max-width:68ch}
-ul{padding-left:1.25rem}
-li{margin:.3rem 0}
-.meta{color:var(--muted);margin:0 0 1.5rem;font-size:.95rem}
-.box{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1rem 1.25rem;margin:1.5rem 0}
-footer{padding-top:1.25rem;padding-bottom:2.5rem;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--a1)}a:hover{color:var(--a2)}
+header.top{border-bottom:1px solid var(--line);background:var(--panel)}
+.bar{max-width:820px;margin:0 auto;padding:14px 16px;display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;justify-content:space-between}
+.brand{font-weight:800;letter-spacing:.08em;text-decoration:none;color:var(--text);background:linear-gradient(90deg,var(--a1),var(--a2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+nav a{margin-right:16px;text-decoration:none;color:var(--muted);font-size:15px}
+nav a:hover,nav a[aria-current]{color:var(--text)}
+nav a:last-child{margin-right:0}
+main{max-width:820px;margin:0 auto;padding:32px 16px 56px}
+h1{font-size:clamp(1.8rem,5vw,2.5rem);line-height:1.15;margin:0 0 8px}
+h2{font-size:1.25rem;margin:36px 0 8px;padding-top:4px}
+.meta{color:var(--muted);font-size:14px;margin:0 0 24px}
+ul{padding-left:22px}li{margin:6px 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:20px 0}
+.hero p.lead{font-size:1.15rem;color:var(--muted);max-width:60ch}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin:24px 0}
+.grid .card{margin:0}.grid h3{margin:0 0 6px;font-size:1rem}.grid p{margin:0;color:var(--muted);font-size:15px}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer div{max-width:820px;margin:0 auto;padding:20px 16px}
+footer a{color:var(--muted)}
 </style>
 </head>
 <body>
-<header><a class="brand" href="index.html">BEIK STUDIO</a><nav><a href="privacidad.html">Privacidad</a><a href="terminos.html">Términos</a><a href="privacy.html" hreflang="en" lang="en">English</a></nav></header>
+<header class="top"><div class="bar">
+<a class="brand" href="index.html">FORZIN CLIPS</a>
+<nav aria-label="Navegación">
+<a href="index.html">Inicio</a>
+<a href="privacidad.html" aria-current="page">Privacidad</a>
+<a href="terminos.html">Términos</a>
+<a href="privacy.html" hreflang="en">English</a>
+</nav></div></header>
 <main>
+
 <h1>Política de privacidad</h1>
-<p class="meta">BEIK STUDIO · Última actualización: 7 de noviembre de 2026</p>
+<p class="meta">FORZIN CLIPS · Última actualización: 8 de noviembre de 2026</p>
 
-<p>BEIK STUDIO es una aplicación de escritorio para Windows que graba la pantalla, organiza las grabaciones en una biblioteca y las publica en YouTube, Facebook, Instagram y TikTok. Es una herramienta privada, creada y usada por Jordan Marmolejo Sanchez. Esta política explica qué datos toca la aplicación y qué hace con ellos.</p>
+<p>FORZIN CLIPS es una aplicación de escritorio para Windows que graba la pantalla y otras fuentes, organiza las grabaciones en una biblioteca y permite publicarlas en YouTube, Facebook, Instagram y TikTok. Esta política explica qué datos toca la aplicación y qué hace con ellos. Antes se llamaba BEIK STUDIO.</p>
 
-<h2>Quién es el responsable</h2>
-<p>Jordan Marmolejo Sanchez. Contacto: <a href="mailto:Jordanmarmolejosanchez@gmail.com">Jordanmarmolejosanchez@gmail.com</a>.</p>
+<h2>Responsable</h2>
+<p>Jordan Marmolejo Sanchez, autor de la aplicación. Contacto: <a href="mailto:Jordanmarmolejosanchez@gmail.com">Jordanmarmolejosanchez@gmail.com</a>.</p>
 
-<h2>Qué datos maneja la aplicación</h2>
+<h2>Datos que maneja la aplicación</h2>
 <ul>
-<li><strong>Tus grabaciones y capturas.</strong> Los vídeos, las miniaturas, las copias con texto y los informes se guardan en tu propio equipo, en la carpeta Vídeos\BEIK STUDIO y en la carpeta de datos de la aplicación.</li>
-<li><strong>La biblioteca.</strong> Una base de datos local con el nombre, la fecha, la duración y el estado de cada clip, y el historial de publicaciones.</li>
-<li><strong>Las credenciales de tus cuentas</strong> (YouTube, Facebook, Instagram y TikTok), cuando las conectes. Se guardan en tu equipo con los mecanismos de protección de Windows. Se conectan una sola vez y puedes desconectarlas cuando quieras.</li>
-<li><strong>Los datos mínimos de cada cuenta</strong> que la plataforma devuelve al conectarla, como el nombre del canal, de la Página o de la cuenta, para mostrar a qué cuenta vas a publicar.</li>
+<li><strong>Grabaciones y capturas:</strong> vídeos, miniaturas, copias con texto e informes de diagnóstico. Se guardan en tu equipo, en la carpeta <code>Vídeos\FORZIN CLIPS</code> y en la carpeta de datos de la aplicación. Las fuentes que captures (pantalla, ventana, cámara, micrófono o audio del sistema) se procesan solo en tu equipo.</li>
+<li><strong>Biblioteca:</strong> una base de datos local con el nombre, la fecha, la duración y el estado de cada clip, y el historial de publicaciones.</li>
+<li><strong>Tokens de acceso:</strong> al conectar una cuenta de YouTube, Facebook, Instagram o TikTok, la aplicación guarda en tu equipo los tokens de acceso que entrega la plataforma, cifrados con la protección de Windows. La aplicación nunca ve ni guarda tus contraseñas. Cada cuenta se conecta una vez y puedes desconectarla cuando quieras.</li>
+<li><strong>Datos básicos de la cuenta:</strong> el nombre del canal, de la Página o de la cuenta que devuelve cada plataforma, para mostrarte dónde vas a publicar.</li>
 </ul>
 
-<h2>Qué NO hace la aplicación</h2>
+<h2>Lo que la aplicación no hace</h2>
 <ul>
-<li>No envía tus grabaciones, tus credenciales ni tus datos a ningún servidor del autor ni a terceros, salvo la publicación que tú pidas.</li>
-<li>No usa analíticas, rastreadores, publicidad ni perfiles.</li>
+<li>No envía grabaciones, tokens ni otros datos al autor ni a servidores propios. FORZIN CLIPS no tiene servidores.</li>
+<li>No usa analíticas, rastreadores, publicidad ni perfilado.</li>
 <li>No vende ni comparte datos.</li>
 <li>No publica nada sin tu autorización expresa en cada publicación.</li>
 </ul>
 
-<h2>Cuándo se envía algo fuera de tu equipo</h2>
-<p>Solo cuando pulsas Publicar. En ese momento la aplicación envía el vídeo, el título, la descripción y los hashtags que tú escribiste a la plataforma o plataformas que elegiste, con la cuenta que conectaste.</p>
+<h2>Cuándo salen datos de tu equipo</h2>
+<p>Solo cuando pulsas «Publicar». Entonces la aplicación envía el vídeo, el título, la descripción y las etiquetas a la plataforma que elegiste, a través de la cuenta que conectaste.</p>
 
 <h2>Servicios de terceros</h2>
-<p>Cada plataforma trata los datos según sus propias condiciones y su propia política de privacidad:</p>
 <ul>
-<li><strong>YouTube.</strong> Se usa la YouTube Data API para subir vídeos a tu canal. Al conectar tu cuenta aceptas los <a href="https://www.youtube.com/t/terms">Términos del servicio de YouTube</a> y la <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>. El uso y la transferencia que BEIK STUDIO hace de la información recibida de las API de Google se ajustan a la Política de datos de usuario de los servicios de API de Google, incluidos los requisitos de uso limitado.</li>
-<li><strong>Facebook e Instagram (Meta).</strong> Se usa la API de Meta para publicar Reels en tu Página de Facebook y en tu cuenta profesional de Instagram.</li>
-<li><strong>TikTok.</strong> Se usa la Content Posting API de TikTok para enviar vídeos a tu cuenta.</li>
+<li><strong>YouTube / Google:</strong> FORZIN CLIPS usa los servicios de la API de YouTube (YouTube API Services) para subir vídeos a tu canal. Al conectar tu cuenta aceptas las <a href="https://www.youtube.com/t/terms">Condiciones del servicio de YouTube</a> y la <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>. El uso y la transferencia que hace FORZIN CLIPS de la información recibida de las API de Google se ajustan a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de la API de Google</a>, incluidos los requisitos de uso limitado. Puedes revocar el acceso en cualquier momento en <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+<li><strong>Facebook e Instagram (Meta):</strong> la aplicación usa las API de Meta para publicar Reels en una Página de Facebook y en una cuenta profesional de Instagram. Se aplican las <a href="https://www.facebook.com/terms">Condiciones de Facebook</a>, las <a href="https://help.instagram.com/581066165581870">Condiciones de Instagram</a> y la <a href="https://www.facebook.com/privacy/policy">Política de privacidad de Meta</a>.</li>
+<li><strong>TikTok:</strong> la aplicación usa la Content Posting API de TikTok para enviar vídeos a tu cuenta. Se aplican las <a href="https://www.tiktok.com/legal/page/global/terms-of-service/es">Condiciones de servicio de TikTok</a> y su <a href="https://www.tiktok.com/legal/page/global/privacy-policy/es">Política de privacidad</a>.</li>
+</ul>
+<p>Cada plataforma trata los datos según sus propias condiciones y políticas.</p>
+
+<h2 id="borrado">Revocar el acceso y borrar tus datos</h2>
+<ul>
+<li><strong>Revocar el acceso:</strong> desconecta la cuenta dentro de la aplicación. Al hacerlo se eliminan de tu equipo los tokens guardados. También puedes revocar el acceso desde la configuración de seguridad de Google, de Facebook (Integraciones de empresa), de Instagram (Apps y sitios web) o de TikTok (Seguridad y permisos).</li>
+<li><strong>Borrar datos locales:</strong> elimina la carpeta <code>Vídeos\FORZIN CLIPS</code> y la carpeta de datos de la aplicación, o desinstala la aplicación. Si usaste una versión anterior, también puede existir <code>Vídeos\BEIK STUDIO</code>.</li>
+<li><strong>Solicitar borrado:</strong> FORZIN CLIPS no conserva datos tuyos fuera de tu equipo. Si aun así quieres pedir el borrado de cualquier dato que el autor pudiera tener, escribe a <a href="mailto:Jordanmarmolejosanchez@gmail.com">Jordanmarmolejosanchez@gmail.com</a>.</li>
 </ul>
 
-<h2>Cómo retirar el acceso y borrar tus datos</h2>
-<ul>
-<li>Puedes desconectar una cuenta desde la aplicación o revocar el acceso desde la configuración de seguridad de cada plataforma (Google, Facebook, Instagram o TikTok).</li>
-<li>Para borrar los datos locales, elimina la carpeta Vídeos\BEIK STUDIO y la carpeta de datos de la aplicación, o desinstala la aplicación.</li>
-<li>Si quieres que se borre cualquier dato relacionado contigo que el autor pudiera tener, escribe a <a href="mailto:Jordanmarmolejosanchez@gmail.com">Jordanmarmolejosanchez@gmail.com</a>.</li>
-</ul>
+<h2>Conservación</h2>
+<p>Los datos locales se conservan en tu equipo hasta que los borres. Los tokens de acceso se eliminan al desconectar la cuenta. Los datos que ya estén en YouTube, Meta o TikTok se rigen por las políticas de cada plataforma.</p>
 
 <h2>Menores</h2>
-<p>La aplicación no está dirigida a menores de 13 años y no recoge datos de menores de forma intencionada.</p>
+<p>La aplicación no está dirigida a menores de 13 años y no recoge conscientemente datos de niños.</p>
 
-<h2>Cambios en esta política</h2>
-<p>Si la aplicación añade funciones que cambien el tratamiento de datos, por ejemplo servicios de inteligencia artificial que analicen tus clips, esta política se actualizará antes y se pedirá tu consentimiento. La fecha de arriba indica la última revisión.</p>
+<h2>Cambios</h2>
+<p>Hoy FORZIN CLIPS no envía tus clips a ningún servicio de inteligencia artificial. Si en el futuro añade funciones que lo hagan, por ejemplo para generar títulos o descripciones, actualizaré esta política antes de activarlas y te pedirá tu consentimiento. La fecha de arriba indica la última revisión.</p>
 
 <h2>Contacto</h2>
-<p>Para cualquier duda o solicitud: <a href="mailto:Jordanmarmolejosanchez@gmail.com">Jordanmarmolejosanchez@gmail.com</a>.</p>
+<p>Para preguntas o solicitudes: <a href="mailto:Jordanmarmolejosanchez@gmail.com">Jordanmarmolejosanchez@gmail.com</a>.</p>
 
 </main>
-<footer>BEIK STUDIO · Jordan Marmolejo Sanchez · <a href="mailto:Jordanmarmolejosanchez@gmail.com">Jordanmarmolejosanchez@gmail.com</a></footer>
+<footer><div>© 2026 Jordan Marmolejo Sanchez · Contacto: <a href="mailto:Jordanmarmolejosanchez@gmail.com">Jordanmarmolejosanchez@gmail.com</a></div></footer>
 </body>
 </html>
