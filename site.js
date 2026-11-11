@@ -25,6 +25,15 @@ const LANCH = new Date('2027-01-15T00:00:00-05:00'); // fecha orientativa del la
   if (rot) {
     const words = (rot.dataset.words || '').split('|'); let i = 0;
     setInterval(() => { i = (i + 1) % words.length; rot.innerHTML = `<span>${words[i]}</span>`; }, 2200);
+    // La palabra va en su propia línea de alto fijo; si la más larga no cabe a lo ancho, se encoge un poco para que nada se mueva
+    const fit = () => {
+      rot.style.fontSize = '';
+      const probe = document.createElement('span'); probe.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap;animation:none';
+      rot.append(probe); let max = 0; words.forEach(w => { probe.textContent = w; max = Math.max(max, probe.getBoundingClientRect().width); }); probe.remove();
+      const avail = rot.getBoundingClientRect().width;
+      if (max > avail) rot.style.fontSize = `${(avail / max) * 0.98}em`;
+    };
+    fit(); window.addEventListener('resize', fit); if (document.fonts) document.fonts.ready.then(fit);
   }
 
   // Aparecer al bajar

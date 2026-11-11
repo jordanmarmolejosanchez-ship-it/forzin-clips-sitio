@@ -1,5 +1,6 @@
 /* FORZIN CLIPS — web. Colores y formas de la app («Noche FORZIN»): negro con un toque morado y el aro naranja→rosa→morado. */
 @font-face{font-family:"Unbounded";src:url("fonts/unbounded-latin-700-normal.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Dancing Script";src:url("fonts/dancing-script-latin-700-normal.woff2") format("woff2");font-weight:700;font-display:swap}
 :root{
   --bg:#05040A;--surface:#0E0C15;--surface2:#16131F;--surface3:#221E2E;
   --text:#F5F4F8;--muted:#A9A5B4;--faint:#75707F;--line:#221E2E;--line2:#332D42;
@@ -28,6 +29,14 @@ img{max-width:100%;height:auto;display:block}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-family:var(--display);font-size:17px;letter-spacing:.04em}
 .brand img{width:34px;height:34px;border-radius:9px}
+.brand .bn{display:flex;flex-direction:column;line-height:1.05}
+/* Firma «by Beik»: la misma del arranque de la app (Dancing Script, rosa claro, inclinada, brillo rosa) */
+.sig,.fsig em{font:700 15px "Dancing Script",cursive;color:#FFB8D2;letter-spacing:0;text-shadow:0 0 12px rgba(255,61,129,.35);transform:rotate(-4deg);transform-origin:left;opacity:.9;display:inline-block}
+.sig{margin-top:1px}
+.fsig{display:flex;align-items:center;gap:10px;width:100%;justify-content:center;padding-bottom:18px;margin-bottom:6px;border-bottom:1px solid var(--line)}
+.fsig img{width:28px;height:28px;border-radius:8px}
+.fsig span{font-family:var(--display);font-size:14px;letter-spacing:.06em;color:var(--text)}
+.fsig em{font-size:18px;margin-left:8px}
 .nav{display:flex;align-items:center;gap:22px}
 .nav a{color:var(--muted);text-decoration:none;font-size:15px}.nav a:hover{color:var(--text)}
 .nav .btn{padding:9px 18px;font-size:14px}
@@ -53,7 +62,7 @@ img{max-width:100%;height:auto;display:block}
 .hero h1{font-family:var(--display);font-size:clamp(2.1rem,5.2vw,4rem);line-height:1.08;margin:0 0 20px;letter-spacing:-.01em}
 .hero p.lead{font-size:clamp(1.05rem,1.6vw,1.25rem);color:var(--muted);max-width:56ch;margin:0 0 30px}
 .cta{display:flex;flex-wrap:wrap;gap:14px}
-.rotator{display:inline-block}
+.rotator{display:block;white-space:nowrap;height:1.2em;line-height:1.2em}
 .rotator span{display:inline-block;animation:wordin .5s var(--ease);background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;padding-bottom:.08em}
 @keyframes wordin{from{opacity:0;transform:translateY(.4em)}to{opacity:1;transform:none}}
 .shot{position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--line2);box-shadow:0 30px 80px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.04) inset;background:var(--surface)}
