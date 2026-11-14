@@ -104,13 +104,49 @@
       <button class="tab" role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1">Clips verticales</button>
       <button class="tab" role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1">Recortar</button>
       <button class="tab" role="tab" id="t4" aria-controls="p4" aria-selected="false" tabindex="-1">Seguimiento</button>
+      <button class="tab" role="tab" id="t5" aria-controls="p5" aria-selected="false" tabindex="-1">Botón FORZIN</button>
+      <button class="tab" role="tab" id="t6" aria-controls="p6" aria-selected="false" tabindex="-1">Voz FORZIN</button>
+      <button class="tab" role="tab" id="t7" aria-controls="p7" aria-selected="false" tabindex="-1">Reverb</button>
+      <button class="tab" role="tab" id="t8" aria-controls="p8" aria-selected="false" tabindex="-1">Dividido</button>
+      <button class="tab" role="tab" id="t9" aria-controls="p9" aria-selected="false" tabindex="-1">FORZIN Móvil</button>
+      <button class="tab" role="tab" id="t10" aria-controls="p10" aria-selected="false" tabindex="-1">Stream Dock</button>
     </div>
   </div>
   <div class="wrap">
     <div class="panel show" role="tabpanel" id="p1" aria-labelledby="t1">
       <div class="txt"><h3>Studio</h3><p>Tu lienzo de grabación, con escenas y fuentes como en tu software de directo favorito.</p>
         <ul><li>Pantalla, ventana, cámara e imágenes en un mismo lienzo</li><li>Micrófono y audio del sistema con controles flotantes</li><li>Botón <strong>FORZIN</strong>: guarda los últimos minutos aunque no estuvieras grabando</li><li>Formatos horizontal, vertical y cuadrado</li></ul></div>
-      <div class="shot"><img src="img/studio.webp" alt="El Studio de FORZIN CLIPS con una fuente en el lienzo" loading="lazy" width="1000" height="713"></div>
+      <div class="shot"><img src="img/studio-forzin.webp" alt="El Studio de FORZIN CLIPS con un directo en el lienzo y el botón FORZIN guardando lo que sigue" loading="lazy" width="1751" height="1320"></div>
+    </div>
+    <div class="panel" role="tabpanel" id="p5" aria-labelledby="t5" hidden>
+      <div class="txt"><h3>Botón FORZIN</h3><p>Guarda el momento aunque no estuvieras grabando: lo que pasó y la reacción que viene después.</p>
+        <ul><li>Solo lo anterior, antes y después o personalizado</li><li>El aro se pone naranja mientras guarda lo que sigue</li><li>Pulsa otra vez para alargar el clip, sin repetir escenas</li><li>También con Ctrl+Shift+F, el Stream Dock o el celular</li></ul></div>
+      <div class="shot"><img src="img/forzin-menu.webp" alt="Menú del botón FORZIN con el tiempo y «Qué guarda el botón»" loading="lazy" width="1695" height="887"></div>
+    </div>
+    <div class="panel" role="tabpanel" id="p6" aria-labelledby="t6" hidden>
+      <div class="txt"><h3>Voz FORZIN</h3><p>Filtros profesionales para tu micrófono con un clic, en tiempo real.</p>
+        <ul><li>Estilos: Natural, Podcast, Streamer, Radio, Sala ruidosa</li><li>Limpieza de ruido con IA y puerta de ruido</li><li>Ecualizador y compresor para una voz pareja</li><li>Guarda tus propias configuraciones</li></ul></div>
+      <div class="shot tall"><img src="img/voz-forzin.webp" alt="Ventana de Voz FORZIN con la onda de la voz y sus pestañas" loading="lazy" width="1050" height="1461"></div>
+    </div>
+    <div class="panel" role="tabpanel" id="p7" aria-labelledby="t7" hidden>
+      <div class="txt"><h3>Reverb FORZIN</h3><p>Dale a tu voz el sonido de una sala, con una vista en 3D del espacio.</p>
+        <ul><li>Estilos listos y perillas de filtro, espacio, cola y mezcla</li><li>Cantidad de efecto en un control</li><li>Se deshace todo con Ctrl+Z</li></ul></div>
+      <div class="shot tall"><img src="img/voz-reverb.webp" alt="Pestaña Reverb de Voz FORZIN con la sala en 3D y sus perillas" loading="lazy" width="1050" height="1461"></div>
+    </div>
+    <div class="panel" role="tabpanel" id="p8" aria-labelledby="t8" hidden>
+      <div class="txt"><h3>Dividido y seguimiento</h3><p>Dos personas en un clip vertical: un marco arriba y otro abajo, cada uno siguiendo a su persona.</p>
+        <ul><li>1 persona o 2 personas</li><li>Cada marco Fijo o «Sigue» (va detrás de un rostro)</li><li>Dibuja los marcos arrastrando sobre el lienzo</li><li>La grabación sigue entera</li></ul></div>
+      <div class="shot"><img src="img/dividido.webp" alt="Studio con dos marcos de Dividido y la barra con Fijo / Sigue" loading="lazy" width="1751" height="1320"></div>
+    </div>
+    <div class="panel" role="tabpanel" id="p9" aria-labelledby="t9" hidden>
+      <div class="txt"><h3>FORZIN Móvil</h3><p>Controla FORZIN desde tu celular, con cualquier red.</p>
+        <ul><li>Avisos cuando un canal de Kick, YouTube o Twitch entra en directo</li><li>Ves el directo, pulsas FORZIN y activas los clips automáticos</li><li>Apruebas, pones título y publicas cada clip</li><li>Conexión segura con tu PC, sin abrir puertos</li></ul></div>
+      <div class="shot phone"><img src="img/movil-envivo.webp" alt="FORZIN Móvil: el directo, el botón FORZIN y los canales en directo (datos de ejemplo)" loading="lazy" width="802" height="2260"></div>
+    </div>
+    <div class="panel" role="tabpanel" id="p10" aria-labelledby="t10" hidden>
+      <div class="txt"><h3>Stream Dock</h3><p>Cada función en una tecla, con su estado a la vista.</p>
+        <ul><li>FORZIN, grabar, pausar, escenas y micrófono</li><li>Sonido del directo, audio del PC y clips automáticos</li><li>Transmitir, cambiar de directo y publicar el último clip</li></ul></div>
+      <div class="shot"><img src="img/streamdock.webp" alt="Teclas de FORZIN CLIPS para Stream Dock" loading="lazy" width="734" height="564"></div>
     </div>
     <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
       <div class="txt"><h3>Clips verticales</h3><p>Convierte cualquier grabación en un Short o un Reel sin salir de la app.</p>
